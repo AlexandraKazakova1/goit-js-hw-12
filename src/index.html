@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 11</title>
+    <title>Homework 12</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -11,17 +11,15 @@
       <form id="search-form">
         <input
           type="text"
-          name="searchQuery"
+          name="query"
           placeholder="Search images..."
           required
         />
         <button type="submit">Search</button>
       </form>
+      <div id="gallery"></div>
+      <button id="load-more" hidden>Load more</button>
     </header>
-
-    <div class="gallery"></div>
-
-    <div class="loader hidden"></div>
 
     <script type="module" src="./main.js"></script>
   </body>
