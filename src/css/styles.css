@@ -52,29 +52,30 @@ button:hover {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 24px;
   margin: 32px 156px;
 }
 
 .gallery-item {
   display: block;
-  border-bottom: 1px solid #808080;
-  border-left: 1px solid #808080;
-  border-right: 1px solid #808080;
+  border: 1px solid #808080;
+
   position: relative;
+  overflow: hidden;
 }
 
 img {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 
 .info {
   display: flex;
   background-color: #fff;
-  padding: 4px 25px;
+  padding: 5px 5px;
   position: absolute;
   bottom: 0;
   font-size: 12px;
